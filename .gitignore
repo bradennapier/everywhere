@@ -34,7 +34,7 @@ local.properties
 _Junk
 
 # flow-typed is added autoamtically on installing node-modules
-\./flow-typed/
+/flow-typed/
 
 # node.js
 #
@@ -43,8 +43,8 @@ npm-debug.log
 yarn-error.log
 
 # Ignore the react-native folder outputs
-./android/
-./ios/
+/android/
+/ios/
 
 # BUCK
 buck-out/
