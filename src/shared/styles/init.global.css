@@ -1,0 +1,120 @@
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.root {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.draggable-toolbar {
+  -webkit-app-region: drag;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 25px;
+  z-index: 2;
+}
+
+html,
+body {
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  position: absolute;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+body {
+  background-color: #121519;
+  line-height: 1.5;
+  color: whitesmoke;
+}
+
+label {
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+input,
+button {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizeLegibility !important;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+input,
+input[type="text"],
+input[type="number"],
+input[type="password"],
+button,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font: inherit;
+  color: inherit;
+}
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+  color: #777;
+  border-bottom: 1px solid #ccc;
+  min-height: 30px;
+}
+
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus {
+  outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+a {
+  color: steelblue;
+  color: var(--themeTextLink, steelblue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #777;
+  color: var(--themeTextLinkHovered, #777);
+  text-decoration: none;
+}

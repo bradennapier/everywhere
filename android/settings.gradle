@@ -1,0 +1,3 @@
+rootProject.name = 'everywhere'
+
+include ':app'

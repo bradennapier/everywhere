@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>IDEX - Decentralized Ethereum Asset Exchange</title>
+    <meta charset="utf,8">
+    <meta http,equiv="X,UA,Compatible" content="IE=edge,chrome=1">
+    <meta name="title" content="IDEX - Decentralized Ethereum Asset Exchange">
+    <meta name="description" content="IDEX is the only Ethereum decentralized exchange with real-time trading and high transaction throughput. Start trading instantly.">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication,tap,highlight" content="no" />
+    <link rel="apple,touch,icon" href="/images/apple,touch,icon.png">
+
+    <meta property="og:title" content="IDEX - Decentralized Ethereum Asset Exchange">
+    <meta property="og:description" content="IDEX is the only Ethereum decentralized exchange with real-time trading and high transaction throughput. Start trading instantly.">
+    <meta property="og:image" content="https://idex.market/static/images/favicon-logo-wt-trans.png">
+    <meta property="og:url" content="https://idex.market">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="light">
+    <div id="loader-wrap">
+        <style type="text/css" scoped>
+            * {
+                box-sizing: border-box;
+            }
+
+            .loaderFixed {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 0;
+                background-color: #121519;
+            }
+
+            .loaderContainer {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                padding-top: 15%;
+            }
+
+            .loaderAnimation {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .loader {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #303641;
+                font-size: 10px;
+                border-top: 1.1em solid rgba(100, 100, 100, 0.2);
+                border-right: 1.1em solid rgba(100, 100, 100, 0.2);
+                border-bottom: 1.1em solid rgba(100, 100, 100, 0.2);
+                border-left: 1.1em solid grey;
+                transform: translateZ(0);
+                animation: load8 1.1s infinite linear;
+            }
+
+            .dash {
+                position: absolute;
+                opacity: 0;
+                display: flex;
+                right: 0;
+                width: calc(100% - 10px);
+                height: 110px;
+                background: url(https://s3.amazonaws.com/dash-os/img/logo/icon-white-small.png) no-repeat center center;
+                animation: fadein 5s 1 linear 0.5s;
+                animation-fill-mode: forwards;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .loader,
+            .loader:after {
+                border-radius: 50%;
+                height: 110px;
+                width: 110px;
+            }
+
+            @-webkit-keyframes fadein {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @-webkit-keyframes load8 {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes load8 {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+        <div class="loaderFixed">
+            <div class="loaderContainer">
+                <div class="loaderAnimation">
+                    <div class="loader"></div>
+                </div>
+                <div class="dash"></div>
+            </div>
+        </div>
+    </div>
+    <div class='draggable-toolbar'></div>
+    <div class="root" id="root"></div>
+</body>
+
+</html>

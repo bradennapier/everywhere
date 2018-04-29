@@ -1,0 +1,9 @@
+{
+  "meta": {
+    "slug": "everywhere-app",
+    "title": "Everywhere App"
+  },
+  "build": {
+    "packager": "yarn"
+  }
+}
