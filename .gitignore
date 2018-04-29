@@ -34,7 +34,7 @@ local.properties
 _Junk
 
 # flow-typed is added autoamtically on installing node-modules
-./flow-typed/
+\./flow-typed/
 
 # node.js
 #
