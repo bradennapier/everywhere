@@ -30,13 +30,21 @@ build/
 local.properties
 *.iml
 
+# Ignore Junk Folder
 _Junk
+
+# flow-typed is added autoamtically on installing node-modules
+flow-typed/
 
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-error.log
+
+# Ignore the react-native folder outputs
+\./android/
+\./ios/
 
 # BUCK
 buck-out/
